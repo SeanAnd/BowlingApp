@@ -1,0 +1,62 @@
+//Apply background gradient to the whole page
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to top, #001169, #003088, #004ea5, #006dc1, #008cdb);
+  padding: 20px;
+  margin: 0;
+  color: white;
+}
+
+// Silk
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+// Make the table fancy
+table {
+  width: 100%;
+  max-width: 75%;
+  overflow: hidden;
+  border-spacing: 2px 5px;;
+}
+
+th {
+  background-color: transparent;
+}
+
+td {
+  background-color: #2e69f1;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 2px solid transparent;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+// Style le buttons
+button {
+  margin: 4px;
+  padding: 8px 12px;
+  background-color: #2e69f1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #1c47c9;
+}
